@@ -68,7 +68,7 @@ pip install -r requirements.txt
 
 Before running the script, you need to:
 
-1.  **Add Your PDF**: Place the PDF file you want to query into the root directory of the project. The script is configured to look for a file named `constitution_bd.pdf`. If your PDF has a different name, you must update the `PDF_FILE_PATH` variable inside the `chat_with_pdf.py` script.
+1.  **Add Your PDF**: Place the PDF file you want to query into the root directory of the project. The script is configured to look for a file named `constitution_bd.pdf`. If your PDF has a different name, you must update the `PDF_FILE_PATH` variable and the tools description accordingly inside the `chat_with_constitution.py` script.
 
 2.  **Prepare Your API Key**: The script will securely prompt you for your `AZURE_OPENAI_API_KEY` the first time you run it. Make sure you have it ready. All other Azure configurations (like endpoint and deployment names) can be adjusted at the top of the script if needed.
 
@@ -77,14 +77,14 @@ Before running the script, you need to:
 With your virtual environment active and the configuration complete, run the main script from the terminal:
 
 ```bash
-python chat_with_pdf.py
+python chat_with_constitution.py
 ```
 
 The application will first prompt you for your Azure API key. After providing it, the PDF will be processed, and the chat session will begin.
 
 ### Example Session
 ```
-$ python chat_with_pdf.py
+$ python chat_with_constitution.py
 AZURE_OPENAI_API_KEY: ********************************
 Type 'exit' or 'quit' to stop.
 
